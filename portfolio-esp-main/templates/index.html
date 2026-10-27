@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <title>Portafolio</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav main-nav">
+        <ul class="main-nav__list main-list">
+          <li class="main-list__item list-item">
+            <a class="list-item__link" href="#home">Inicio</a>
+          </li>
+          <li class="main-list__item list-item">
+            <a class="list-item__link" href="#about">Por que es importante</a>
+          </li>
+          <li class="main-list__item list-item">
+            <a class="list-item__link" href="#skills">Que podemos hacer</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <!-- Vista previa -->
+      <section class="main__home home" id="home">
+        <h1 class="home__title"></h1>
+        <p class="home__subtitle">Juntos salvamos, Juntos logramos</p>
+      </section>
+      <!-- Acerca de mí -->
+      <section class="main__about about" id="about">
+        <h2 class="about__title">¿Por que es importante cuidar el medio ambiente?</h2>
+        <div class="about__info info-block">
+          <p class="info-block__text">
+            Cuidar el medio ambiente es y portante por 
+            garantiza la supervivencia de los seres vivos, 
+            protege los recursos naturales y mantiene el 
+            equilibrio ecológico del planeta
+          </p>
+          <img
+            class="info-block__img"
+            src="../static/img/images.jpg"
+            alt="save the world"
+            width="250"
+            height="250"
+          />
+        </div>
+      </section>
+      <!-- Sección de competencias -->
+      <section class="main__skills skills" id="skills">
+        <h2 class="skills__title">Que podemos hacer</h2>
+        <form action="/" method="POST">
+          <ul class="skills__list skills-list">
+            <li class="skills-list__skill skill">
+              <img
+                class="skill__img"
+                src="../static/img/water.jpg"
+                alt="python"
+                width="150"
+                height="150"
+              />
+              <span class="skill__info">Cerrar las llaves de agua,
+                 guardar agua de la lluvia 
+                 para despues usarla o no desperdiciarla 
+                 al bañarse o al lavar la ropa</span>
+              <input class="skill__button" type="submit" name="button_python" value="No muy dificil verdad">
+            </li>
+            <li class="skills-list__skill skill">
+              <img
+                class="skill__img"
+                src="../static/img/rec-removebg-preview.png"
+                alt="discord"
+                width="150"
+                height="150"
+              />
+              <span class="skill__info">Reciclar cosas como
+                plastico, carton o cualquier
+                cosa no es complicado pero 
+                si no sabes que hacer 
+                estan los botes de basura 
+                para reciclar no?
+              </span>
+              <input class="skill__button" type="submit" name="button_discord" value="Acaso es mucho pedir">
+            </li>
+            <li class="skills-list__skill skill">
+              <img
+                class="skill__img"
+                src="../static/img/rere.png"
+                alt="html"
+                width="150"
+                height="150"
+              />
+              <span class="skill__info">Reducir y Reutilizar 
+                sonara dificil pero es tan facil
+                como por ejemplo en vez de comprarte
+                tu coca de plastico comprate tu
+                coca de vidrio y puedes hacer manualidades
+                con botellas carton y otras cosas
+              </span>
+              <input class="skill__button" type="submit" name="button_html" value="Algo demasiado facil">
+            </li>
+            <li class="skills-list__skill skill">
+              <img
+                class="skill__img"
+                src="../static/img/images-removebg-preview.png"
+                alt="SQL"
+                width="150"
+                height="150"
+              />
+              <span class="skill__info">
+                Y ayudar, a como me refiero al decir ayudar
+                por ejemplo si encuentras una basura
+                en la calle recojerla o si vez que tu coche
+                esta descompuesto y produce mucho humo usar
+                una bicicleta o simplemente no perjudicar
+              </span>
+              <input class="skill__button" type="submit" name="button_db" value="¡Que no se te olvide ehh!">
+            </li>
+          </ul>
+        </form>
+        {% if button_python%}
+          <div class="skills__project project" id="project">
+              <img class="project__img" src="../static/img/python-project.png" alt="project" width="500">
+              <a class="project__link" href="">Abierto en GitHub</a>
+          </div>
+        {% endif %}
+      </section>
+      <!-- Formulario de contacto -->
+              <span class="juego">
+                Ahora que sabes sobre el cambi climatico
+                por que no juegas un pequeño juego sobre el: 
+              </span>
+    <!-- Pie de página con enlaces a redes sociales -->
+    <footer>
+
+    </footer>
+  </body>
+</html>
